@@ -1,0 +1,137 @@
+:root {
+    --section-welcome: #fc68b2;
+    --section-nav: #191a5c;
+    --section-body: #f5d0e2;
+    --color-nav: #fcfafc;
+}
+
+body {
+    background-color: var(--section-body);
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-nav);
+}
+
+li {
+    text-decoration: none;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
+    background-color: var(--section-nav);
+    color: var(--color-nav);
+    padding: 0 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.nav-list {
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 2rem;
+}
+h1, h2 {
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    color: var(--section-nav);
+}
+h1 {
+    font-weight: 700;
+    font-size: 7rem;
+}
+h2 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--section-nav);
+}
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--section-welcome);
+}
+
+/* project section*/
+.project-section {
+    text-align: center;
+    padding: 10rem;
+    background-color: var(--section-body);
+}
+.project-section-header {
+    padding-bottom: 10px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 3px solid var(--section-nav);
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    margin: 0 auto;
+}
+/* contact section*/
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    padding: 0 2rem;
+    background-color: var(--section-welcome);
+}
+.contact-section-header {
+    font-size: 6rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 4rem;
+    border-bottom: 25px solid var(--section-nav);
+}
+.contact-details {
+    font-size: 2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+    color: var(--color-nav);
+    padding: 20px;
+    
+}
+
